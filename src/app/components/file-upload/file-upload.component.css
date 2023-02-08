@@ -1,0 +1,14 @@
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#up{
+
+    padding-left: 450px;
+    background-color:aqua;
+}
+#bt{
+    margin-top: 50px;
+   margin-left: 150px;
+}

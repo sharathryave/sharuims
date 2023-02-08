@@ -1,0 +1,25 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid" *ngIf="flag">
+       <div id="up"> <h1 style="color:darkgreen">IMS Page</h1></div>
+        
+         <input (change) ="selectFile($event)" type="file" />  
+         
+        
+    <div id="bt">
+        <button (click)="uploadFile()" class="btn" mat-raised-button-color="primary" >Upload</button>
+        <!-- <button (click)="uploadFile()" class="btn" mat-raised-button-color="primary" style="margin-left: 60px" >Update</button> -->
+    </div>
+ 
+    </div>
+</nav>
+
+<!-- <div class="container" *ngIf="!flag">
+    <h1>Please wait...</h1>
+    <h2>Uploading..</h2>
+</div> -->
+
+<table>
+    <tr *ngFor="let row of data">
+      <td *ngFor="let cell of row">{{ cell }}</td>
+    </tr>
+  </table>
